@@ -1,8 +1,15 @@
-import Hero from "@/app/component/Hero";
-
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <Hero></Hero>
+    <div className="fixed inset-0 w-screen h-screen">
+      <Image
+        src="/img/leontine_under_construction.png"
+        alt="Under Construction"
+        fill
+        style={{ objectFit: "contain" }}
+        priority
+      />
+    </div>
   );
 }
